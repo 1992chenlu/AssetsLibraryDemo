@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @interface MyTableViewController : UITableViewController
+
+@property (nonatomic, strong) ALAssetsLibrary *assetsLibrary;
+@property (nonatomic, strong) NSMutableArray *videoTitleArray;
+@property (nonatomic, strong) NSMutableArray *videoURLArray;
+@property (nonatomic, strong) NSMutableArray *videoImageArray;
 
 @end
